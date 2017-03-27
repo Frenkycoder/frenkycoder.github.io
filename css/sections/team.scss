@@ -1,0 +1,110 @@
+.team {
+    background: url('../img/bg/s4.png') center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.team__title {
+    @extend .section__title;
+    margin-top: 65px;
+    margin-left: -15px;
+}
+
+.team__section {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 49%;
+    background: rgba(#2f3234, .93%);
+    padding: 0 95px 75px;
+}
+
+.team-acco {
+  margin-top: 60px;
+}
+
+.team-acco__item {
+    margin-bottom: 32px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &.active .team-acco__trigger {
+        color: $yellow;
+    }
+    &.active .team-acco__trigger:before {
+        transform: rotate(-180deg);
+    }
+}
+
+.team-acco__trigger {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'gagalinregular';
+    text-decoration: none;
+    position: relative;
+    display: block;
+    &:before {
+        border-top: 7px solid #f9b43b;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 0 solid transparent;
+        transform: rotate(0deg);
+        transition: .3s;
+    }
+}
+
+.team-acco__trigger:before,
+.team-acco__trigger:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -18px;
+    top: 8px;
+    width: 0;
+    height: 0;
+}
+
+.team-acco__content {
+    @extend %clearfix;
+    padding-top: 14px;
+    display: none;
+}
+
+.team-acco__pic {
+    float: left;
+    text-align: center;
+    width: 30%;
+}
+
+.team-acco__text {
+    float: left;
+    width: 70%;
+}
+
+.team-acco__img {
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/content/aphex.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.team-acco__title {
+    font-family: 'ubuntubold';
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.team-acco__text-content {
+    font-family: 'ubuntulight';
+    color: #fff;
+    font-size: 14px;
+    max-height: 76px;
+    overflow: hidden;
+}

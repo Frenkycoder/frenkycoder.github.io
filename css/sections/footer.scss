@@ -1,0 +1,49 @@
+.footer__column {
+    width: 50%;
+    float: left;
+}
+
+.footer__right {
+    padding-top: 8px;
+    text-align: right;
+}
+
+.footer__street {
+    color: $grey;
+    margin-bottom: 5px;
+}
+
+.footer__phone {
+    font-family: 'ubuntubold', sans-serif;
+    color: $orange;
+}
+
+.socials__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.socials__link {
+    display: inline-block;
+    max-width: 23px;
+    max-height: 20px;
+}
+
+.socials__icon {
+    max-width: 23px;
+    max-height: 20px;
+    width: 100%;
+    height: 100%;
+    fill: #5a5a5a;
+    fill-opacity: .75;
+    transition: .3s;
+    &:hover {
+        fill-opacity: 1;
+        fill: $white;
+    }
+}
+
+.footer__icon {
+    margin-right: 8px;
+}

@@ -1,0 +1,58 @@
+.full-review {
+    padding: 25px 20px;
+    position: relative;
+}
+
+.popup {
+    display: none;
+}
+
+.full-review__close {
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    opacity: .7;
+    -webkit-transition: .3s;
+    transition: .3s;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.full-review__close svg {
+    width: 100%;
+    height: 100%;
+}
+
+.full-review__title {
+    font-family: 'Gagalin-Regular';
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.full-review__content {
+    font-size: 14px;
+    font-family: 'ubuntulight', sans-serif;
+}
+
+.status-popup {
+    width: 240px;
+}
+
+.status-popup__inner {
+    padding: 20px;
+    text-align: center;
+}
+
+.status-popup__message {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.error-message {
+    color: #e35028;
+}

@@ -1,0 +1,232 @@
+.burgers {
+    background: #f9b43b;
+    background: -moz-linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+    background: -webkit-linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+    background: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+    @include laptop {
+        & .container {
+            width: 930px;
+        }
+    }
+}
+
+.burger-slider-wrap {
+    position: relative;
+}
+
+.burger-slider__controls {
+    @extend %clearfix;
+}
+
+.burgers-slider__item {
+    @extend %clearfix;
+    position: relative;
+    padding-bottom: 85px;
+}
+
+.ingredients {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: rgba(227, 80, 40, .4);
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    z-index: 10;
+    &:hover {
+        background: #e35028;
+    }
+}
+
+.ingredients:hover .ingredients__dropdown {
+    left: 100%;
+    opacity: 1;
+}
+
+.ingredients__icon {
+    position: absolute;
+    left: 50%;
+    top: 54%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.ingredients__dropdown {
+    padding: 13px 24px 20px 21px;
+    background: rgba(255, 255, 255, .9);
+    position: absolute;
+    width: 270px;
+    border-radius: 7px;
+    left: -9999px;
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+    z-index: 10;
+    font-family: 'ubuntumedium';
+}
+
+.ingredients__icon-text {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'gagalinregular';
+}
+
+.indredients__table {
+    width: 100%;
+}
+
+.ingredients__table-cell {
+    vertical-align: middle;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.ingredients__table-cell_icon {
+    width: 70px;
+}
+
+.ingredients__table-amount {
+    text-align: right;
+    font-family: 'ubuntulight';
+}
+
+.burger-weight {
+    position: absolute;
+    bottom: 15px;
+    left: -3px;
+    opacity: .5;
+}
+
+.burgers-slider__left {
+    float: left;
+    width: 50%;
+    padding-top: 91px;
+}
+
+.burgers-slider__right {
+    float: left;
+    width: 48%;
+    margin-left: 10px;
+}
+
+.burger-slider__controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+}
+
+.burger-slider__btn_next {
+    right: -42px;
+}
+
+.burger-slider__btn_prev {
+    left: -42px;
+}
+
+.burger-slider__btn_next,
+.burger-slider__btn_prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.burger-slider__btn_prev svg {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.burger-slider__btn_next svg {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.burgers-slider__pic {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.burgers-slider__right .section__title {
+    line-height: 63px;
+}
+
+.burgers .section__title {
+    margin-bottom: 15px;
+    margin-top: 16px;
+    max-height: 144px;
+}
+
+.burgers-slider__text {
+    color: #fff;
+    margin-top: 35px;
+    margin-bottom: 18px;
+}
+
+.burgers-slider__text p {
+    max-height: 146px;
+}
+
+.burgers-slider__price {
+    display: inline-block;
+    vertical-align: middle;
+    color: #e35028;
+    font-family: 'gagalinregular';
+}
+
+.burgers-slider__price-amount {
+    font-size: 72px;
+    max-width: 103px;
+    overflow: hidden;
+}
+
+
+
+.burgers-slider__price-amount,
+.burgers-slider__price-measure {
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 1;
+}
+
+.burgers-slider__price-measure {
+    font-size: 30px;
+    max-width: 99px;
+    overflow: hidden;
+    vertical-align: baseline;
+}   
+
+.burgers-slider__buy {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 24px;
+}
+
+.burger-weight__measure {
+    background: url('../img/icons/kkal.svg') 50% no-repeat;
+    width: 65px;
+    height: 60px;
+    position: relative;
+}
+
+.burger-weight__amount {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'gagalinregular';
+}
+
+.burger-weight__title {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'gagalinregular';
+}

@@ -1,0 +1,86 @@
+.menu {
+    background: url('../img/bg/sec5.png') center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.menu__title {
+    position: absolute;
+    top: 86px;
+    left: 136px;
+    max-width: 350px;
+    overflow: hidden;
+}
+
+.menu-acco {
+    @extend %clearfix;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.menu-acco__item {
+    float: left;
+    height: 100%;
+
+    &.active .menu-acco__trigger-text {
+        color: $yellow;
+    }
+}
+
+.menu-acco__trigger {
+    width: 80px;
+    height: 100%;
+    float: left;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu-acco__trigger-text {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'gagalinregular';
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    text-align: center;
+    white-space: nowrap;
+    width: 650px;
+    max-width: 650px;
+    overflow: hidden;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: -275px;
+    margin-top: -40px;
+}
+
+.menu-acco__content {
+    height: 100%;
+    float: left;
+    background: rgba(47, 50, 52, .93);
+    width: 0px;
+    overflow: hidden;
+}
+
+.menu-acco__text {
+    font-family: 'ubuntulight';
+    font-size: 14px;
+    color: #fff;
+    padding: 60px 30px;
+    width: 550px;
+    max-height: 636px;
+    line-height: 1.8;
+    overflow: hidden;
+}
+
+@each $burger in (one,
+two,
+three) {
+    .burger_#{$burger} {
+        background-image: url('../img/content/burger-#{$burger}.png');
+    }
+}

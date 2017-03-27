@@ -1,0 +1,32 @@
+// layout vars
+$footer-height: 58px;
+$container-width: 940px;
+//colors
+$white: #ffffff;
+$grey: #f1f1f1;
+$black: #2f3234;
+$orange: #e45028;
+$yellow: #f9b43b;
+
+
+
+
+//layout
+@import "layout/normalize";
+@import "layout/font-awesome";
+@import "layout/fonts";
+@import "layout/mixins";
+@import "layout/adjustment";
+@import "layout/popup";
+@import "layout/fancybox";
+
+//sections
+@import "sections/header";
+@import "sections/best";
+@import "sections/slider";
+@import "sections/team";
+@import "sections/menu";
+@import "sections/gallery";
+@import "sections/form";
+@import "sections/map";
+@import "sections/footer";
